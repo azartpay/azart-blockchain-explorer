@@ -150,7 +150,7 @@ function formatExchangedCurrency(amount) {
 		var dec = new Decimal(amount);
 		dec = dec.times(global.exchangeRate);
 
-		return addThousandsSeparators(dec.toDecimalPlaces(2)) + " " + coins[config.coin].exchangeRateData.exchangedCurrencyName;
+		return addThousandsSeparators(dec.toDecimalPlaces(8)) + " " + coins[config.coin].exchangeRateData.exchangedCurrencyName;
 	}
 
 	return "";

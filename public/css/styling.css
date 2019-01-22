@@ -1,6 +1,6 @@
 body {
 	font-size: 14px;
-	font-family: "Ubuntu", sans-serif;
+	font-family: "Trebuchet MS", Helvetica, , sans-serif;
 	/*font: 14px 'Open Sans', "Lucida Grande", Helvetica, Arial, sans-serif;*/
 }
 
@@ -8,6 +8,14 @@ hr {
 	margin: 5px 0 15px 0;
 }
 
+.pagination-lg .page-link {
+    padding: 7px 15px;
+    font-size: 14px;
+    font-weight: bold; 
+}
+
+.navbar-brand {font-weight: bold !important; font-size: 18px !important;}
+.card-header h2, .card-header span.h6  { font-weight: bold !important; font-size: 16px !important; }
 img.header-image {
 	margin-top: -10px;
 	margin-bottom: -5px;
@@ -17,7 +25,7 @@ img.header-image {
 }
 
 code, .monospace {
-	font-family: "Source Code Pro", monospace;
+
 }
 
 .card-body {

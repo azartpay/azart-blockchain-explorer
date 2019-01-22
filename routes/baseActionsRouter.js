@@ -3,6 +3,7 @@ var router = express.Router();
 var util = require('util');
 var moment = require('moment');
 var bitcoinCore = require("bitcoin-core");
+
 var qrcode = require('qrcode');
 var bitcoinjs = require('bitcoinjs-lib');
 var sha256 = require("crypto-js/sha256");
@@ -86,7 +87,7 @@ router.get("/", function(req, res) {
 router.get("/node-status", function(req, res) {
 	coreApi.getBlockchainInfo().then(function(getblockchaininfo) {
 		res.locals.getblockchaininfo = getblockchaininfo;
-
+/*
 		coreApi.getNetworkInfo().then(function(getnetworkinfo) {
 			res.locals.getnetworkinfo = getnetworkinfo;
 
@@ -113,6 +114,7 @@ router.get("/node-status", function(req, res) {
 
 			res.render("node-status");
 		});
+*/
 	}).catch(function(err) {
 		res.locals.userMessage = "Error getting node status: (id=3), err=" + err;
 

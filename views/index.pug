@@ -4,8 +4,6 @@ block headContent
 	title Home
 	
 block content
-	h1(class="h3") #{coinConfig.siteTitle}
-	hr
 
 	if (config.demoSite && session.hideHomepageBanner != "true")
 		div(class="alert alert-primary alert-dismissible", role="alert")
@@ -171,6 +169,8 @@ block content
 							th(class="text-left") Rate
 							each item, index in chainTxStats
 								td(class="monospace") #{new Decimal(item.txrate).toDecimalPlaces(4)}
+
+
 
 block endOfBody
 	script(async, defer, src="https://buttons.github.io/buttons.js")

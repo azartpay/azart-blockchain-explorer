@@ -5,9 +5,9 @@ module.exports = {
 
 	rpc: {
 		host:"localhost",
-		port:8332,
-		username:"username",
-		password:"password"
+		port:24127,
+		username:"azartrpc",
+		password:"op978wd46yo843ymfnybs46gtdc!12eETbyrv6"
 	},
 
 	// optional: enter your api access key from ipstack.com below
